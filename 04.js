@@ -5,7 +5,7 @@
   No comentar la funcion 
 */
 
-function numeroSimetrico(num) {
+function numeroSimetrico (num) {
   // La funcion llamada 'numeroSimetrico' recibe como argumento un numero entero 'num'
   // Esta devuelve true o false dependiendo de si el número es simétrico o no. 
   // Un número es simétrico cuando es igual a su reverso.
@@ -13,7 +13,9 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
-
+  numeroString = num.toString()
+  invertirdo = numeroString.split('').reverse().join('')
+  return numeroString === invertirdo
 }
 
 // No modifiques nada debajo de esta linea //
